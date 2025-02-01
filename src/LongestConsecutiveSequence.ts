@@ -21,7 +21,7 @@ function longestConsecutive(nums: number[]): number {
         if(currentSequenceLength.current > longestSequence) longestSequence = currentSequenceLength.current;
     })
     console.log(mappedNums, longestSequence);
-    return 0;
+    return longestSequence;
 };
 
 function checkBelow(below: number, mappedNums: Map<number, boolean>, currentSequenceLength: {current:number}){
